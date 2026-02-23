@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en" id="top">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wanderlust Travels — Adventure Tours</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <header class="header">
+    <nav class="nav container">
+      <a class="brand" href="#top" aria-label="Wanderlust Travels Home">
+  <img src="logo.png" alt="Wanderlust Travels logo" class="logo-img">
+</a>
+
+
+      <!-- CSS-only hamburger -->
+      <input type="checkbox" id="navcheck" class="navcheck" aria-label="Open menu" />
+      <label for="navcheck" class="nav-toggle" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#experiences">Experiences</a></li>
+        <li><a href="#guides">Tour guides</a></li>
+        <li><a href="#club">Club</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#booking">Plan a trip</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO (LOOPING VIDEO BG) -->
+  <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1600&q=60">
+      <source src="https://cdn.coverr.co/videos/coverr-a-hiker-looking-at-the-view-4060/1080p.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="container hero-content">
+      <!-- Featured trip ribbon -->
+      <div class="featured-ribbon" role="note">
+        Featured trip of the week: <strong>Morocco Desert Expedition</strong> • <span>Limited slots</span>
+      </div>
+
+      <p class="pill">Adventure-first • Curated routes • Local experts</p>
+      <h1>Chase wild places. Collect real stories.</h1>
+      <p class="lead">
+        From mountain trails to desert safaris, we plan trips that feel alive — with flexible bookings and trusted guides.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn" href="#booking">Plan a trip</a>
+        <a class="btn btn-ghost" href="#destinations">Explore destinations</a>
+      </div>
+
+      <div class="hero-stats" aria-label="Highlights">
+        <div class="stat"><strong>60+</strong><span class="muted">Destinations</span></div>
+        <div class="stat"><strong>4.8★</strong><span class="muted">Traveler rating</span></div>
+        <div class="stat"><strong>24/7</strong><span class="muted">Support</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTINATIONS -->
+  <section class="section" id="destinations">
+    <div class="container">
+      <div class="section-head">
+        <h2>Adventure hotspots</h2>
+        <p class="muted">Handpicked trips for people who don’t want “ordinary”.</p>
+      </div>
+
+      <div class="grid">
+        <a class="tile tile--lg" href="#booking" aria-label="Book Bali">
+          <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1600&q=60" alt="Bali coastline" />
+          <div class="tile-overlay">
+            <h3>Bali</h3>
+            <p class="muted">Volcano hikes • Waterfalls</p>
+
+            <ul class="includes">
+              <li>Airport pickup</li>
+              <li>Local guide</li>
+              <li>2 activities</li>
+            </ul>
+
+            <span class="chip">From ₦280k</span>
+          </div>
+        </a>
+
+        <a class="tile" href="#booking" aria-label="Book Cape Town">
+          <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1200&q=60" alt="Cape Town mountains" />
+          <div class="tile-overlay">
+            <h3>Cape Town</h3>
+            <p class="muted">Hikes • Ocean views</p>
+
+            <ul class="includes">
+              <li>Table Mountain hike</li>
+              <li>City tour</li>
+              <li>Local guide</li>
+            </ul>
+
+            <span class="chip">From ₦220k</span>
+          </div>
+        </a>
+
+        <a class="tile" href="#booking" aria-label="Book Morocco">
+          <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=60" alt="Moroccan market" />
+          <div class="tile-overlay">
+            <h3>Marrakech</h3>
+            <p class="muted">Desert • Culture</p>
+
+            <ul class="includes">
+              <li>Desert camp night</li>
+              <li>Camel ride</li>
+              <li>Local guide</li>
+            </ul>
+
+            <span class="chip">From ₦240k</span>
+          </div>
+        </a>
+
+        <a class="tile" href="#booking" aria-label="Book Iceland">
+          <img src="https://images.unsplash.com/photo-1500043357865-c6b8827edf02?auto=format&fit=crop&w=1200&q=60" alt="Iceland landscape" />
+          <div class="tile-overlay">
+            <h3>Iceland</h3>
+            <p class="muted">Glaciers • Northern lights</p>
+
+            <ul class="includes">
+              <li>Glacier walk</li>
+              <li>Hot springs</li>
+              <li>Northern lights tour</li>
+            </ul>
+
+            <span class="chip">From ₦520k</span>
+          </div>
+        </a>
+
+        <a class="tile tile--wide" href="#booking" aria-label="Book Dubai">
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1600&q=60" alt="Dubai skyline" />
+          <div class="tile-overlay">
+            <h3>Dubai</h3>
+            <p class="muted">Skyline • Desert safari</p>
+
+            <ul class="includes">
+              <li>Desert safari</li>
+              <li>Dune bashing</li>
+              <li>City skyline tour</li>
+            </ul>
+
+            <span class="chip">From ₦300k</span>
+          </div>
+        </a>
+
+        <a class="tile" href="#booking" aria-label="Book Kenya">
+          <img src="https://images.unsplash.com/photo-1508672019048-805c876b67e2?auto=format&fit=crop&w=1200&q=60" alt="Safari in Kenya" />
+          <div class="tile-overlay">
+            <h3>Kenya</h3>
+            <p class="muted">Safari • Wildlife</p>
+
+            <ul class="includes">
+              <li>Safari drive</li>
+              <li>Park entry</li>
+              <li>Local guide</li>
+            </ul>
+
+            <span class="chip">From ₦410k</span>
+          </div>
+        </a>
+      </div>
+
+      <p class="note muted">Prices are sample values for your portfolio. You can edit them anytime.</p>
+    </div>
+  </section>
+
+  <!-- EXPERIENCES -->
+  <section class="section section-alt" id="experiences">
+    <div class="container">
+      <div class="section-head">
+        <h2>Choose your adventure</h2>
+        <p class="muted">Pick a vibe — we’ll tailor the route around it.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="icon">⛰️</div>
+          <h3>Mountain & trails</h3>
+          <p>Guided hikes, sunrise climbs, and scenic routes with safe pacing.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">🏜️</div>
+          <h3>Desert & dunes</h3>
+          <p>4x4 rides, sandboarding, camp nights, and star-filled skies.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon">🦁</div>
+          <h3>Wildlife safari</h3>
+          <p>Ethical, guided safaris with the best viewing seasons.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOUR GUIDES -->
+  <section class="section" id="guides">
+    <div class="container">
+      <div class="section-head">
+        <h2>Meet the guides</h2>
+        <p class="muted">Local experts who know the terrain — and the hidden gems.</p>
+      </div>
+
+      <div class="guides">
+        <article class="guide card">
+          <img class="avatar" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Guide Amina" />
+          <div>
+            <h3>Amina K.</h3>
+            <p class="muted">West Africa • English, French</p>
+            <div class="tags">
+              <span class="tag">Safari</span>
+              <span class="tag">Culture</span>
+              <span class="tag">Food tours</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="guide card">
+          <img class="avatar" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Guide Luca" />
+          <div>
+            <h3>Luca M.</h3>
+            <p class="muted">Europe • English, Italian</p>
+            <div class="tags">
+              <span class="tag">Hikes</span>
+              <span class="tag">City trails</span>
+              <span class="tag">Museums</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="guide card">
+          <img class="avatar" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Guide Zainab" />
+          <div>
+            <h3>Zainab O.</h3>
+            <p class="muted">Middle East • English, Arabic</p>
+            <div class="tags">
+              <span class="tag">Desert</span>
+              <span class="tag">Luxury stays</span>
+              <span class="tag">Night tours</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSCRIPTION / CLUB -->
+  <section class="section section-alt" id="club">
+    <div class="container">
+      <div class="section-head">
+        <h2>Wanderlust Club</h2>
+        <p class="muted">Get early deals, exclusive routes, and travel tips — built for adventurers.</p>
+      </div>
+
+      <div class="pricing">
+        <article class="plan card">
+          <h3>Explorer</h3>
+          <p class="muted">Start here for weekly deals</p>
+          <p class="price"><span class="currency">₦</span>0 <span class="muted">/mo</span></p>
+          <ul class="list">
+            <li>Weekly destination deals</li>
+            <li>Packing checklist</li>
+            <li>Priority email support</li>
+          </ul>
+        </article>
+
+        <article class="plan card featured">
+          <div class="badge">Best value</div>
+          <h3>Trailblazer</h3>
+          <p class="muted">For frequent travelers</p>
+          <p class="price"><span class="currency">₦</span>4,500 <span class="muted">/mo</span></p>
+          <ul class="list">
+            <li>Members-only discounts</li>
+            <li>Early access bookings</li>
+            <li>Free itinerary edits</li>
+          </ul>
+        </article>
+
+        <article class="plan card">
+          <h3>Nomad Elite</h3>
+          <p class="muted">VIP perks & exclusive trips</p>
+          <p class="price"><span class="currency">₦</span>9,500 <span class="muted">/mo</span></p>
+          <ul class="list">
+            <li>Exclusive expedition routes</li>
+            <li>Airport pickup credits</li>
+            <li>Concierge planning</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-head">
+        <h2>Travelers love us</h2>
+        <p class="muted">Real-looking dummy faces + reviews (portfolio friendly).</p>
+      </div>
+
+      <div class="testimonials">
+        <article class="t-card">
+          <div class="t-top">
+            <img class="avatar" src="https://randomuser.me/api/portraits/men/11.jpg" alt="Traveler Daniel" />
+            <div>
+              <h3>Daniel A.</h3>
+              <p class="muted">Cape Town Adventure</p>
+            </div>
+            <div class="stars" aria-label="5 star rating">★★★★★</div>
+          </div>
+          <p class="t-text">“The hikes were perfectly planned. Our guide knew the safest routes and the best views.”</p>
+        </article>
+
+        <article class="t-card">
+          <div class="t-top">
+            <img class="avatar" src="https://randomuser.me/api/portraits/women/15.jpg" alt="Traveler Kemi" />
+            <div>
+              <h3>Kemi O.</h3>
+              <p class="muted">Dubai Desert Experience</p>
+            </div>
+            <div class="stars" aria-label="5 star rating">★★★★★</div>
+          </div>
+          <p class="t-text">“The desert camp night was unreal. Smooth booking, clear updates, and premium vibes.”</p>
+        </article>
+
+        <article class="t-card">
+          <div class="t-top">
+            <img class="avatar" src="https://randomuser.me/api/portraits/men/76.jpg" alt="Traveler Tolu" />
+            <div>
+              <h3>Tolu S.</h3>
+              <p class="muted">Bali Volcano Trip</p>
+            </div>
+            <div class="stars" aria-label="5 star rating">★★★★★</div>
+          </div>
+          <p class="t-text">“Volcano sunrise was life-changing. Everything was organized — zero stress from start to end.”</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="section section-alt" id="booking">
+    <div class="container booking-grid">
+      <div class="booking-copy">
+        <h2>Plan your trip</h2>
+        <p class="muted">Drop your details — we’ll send curated options in 24 hours (portfolio demo).</p>
+
+        <div class="trust">
+          <div class="trust-item"><strong>Flexible</strong><span class="muted">Free itinerary edits</span></div>
+          <div class="trust-item"><strong>Safe</strong><span class="muted">Verified local guides</span></div>
+          <div class="trust-item"><strong>Fast</strong><span class="muted">24h response time</span></div>
+        </div>
+      </div>
+
+      <form class="form card">
+        <label>
+          Full name
+          <input type="text" placeholder="e.g., Sope Agbebi" required>
+        </label>
+
+        <label>
+          Email
+          <input type="email" placeholder="you@example.com" required>
+        </label>
+
+        <label>
+          Destination
+          <input type="text" placeholder="e.g., Bali" required>
+        </label>
+
+        <div class="two">
+          <label>
+            Depart
+            <input type="date" required>
+          </label>
+          <label>
+            Return
+            <input type="date" required>
+          </label>
+        </div>
+
+        <div class="two">
+          <label>
+            Travelers
+            <select required>
+              <option value="">Select…</option>
+              <option>1</option><option>2</option><option>3</option><option>4+</option>
+            </select>
+          </label>
+
+          <label>
+            Budget
+            <select required>
+              <option value="">Select…</option>
+              <option>Economy</option>
+              <option>Standard</option>
+              <option>Premium</option>
+              <option>Luxury</option>
+            </select>
+          </label>
+        </div>
+
+        <button class="btn btn-block" type="submit">Request itinerary</button>
+        <p class="tiny muted">Demo only — no backend connected.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+
+    <!-- Column 1 -->
+    <div class="footer-brand">
+      <a class="logo" href="#top" aria-label="Wanderlust Travels Home">
+        <img src="logo.png" alt="Wanderlust Travels logo" class="logo-img">
+      </a>
+      <p class="muted">Adventure-first travel experiences.</p>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="#destinations">Destinations</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#guides">Guides</a>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-col">
+      <h4>Start</h4>
+      <a href="#club">Wanderlust Club</a>
+      <a href="#booking">Plan a trip</a>
+    </div>
+
+  </div>
+
+  <p class="tiny muted center">© 2026 Wanderlust Travels. Portfolio project.</p>
+</footer>
+
