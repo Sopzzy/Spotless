@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotless Laundry — Wash • Fold • Deliver</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+
+<!-- skeleton loader enabled by default -->
+<body class="loading" id="top">
+  <!-- NAV -->
+  <header class="header">
+    <nav class="nav container">
+      <a class="logo" href="#top" aria-label="Spotless Laundry Home">
+  <img src="logo.png" class="logo-mark" alt="Spotless logo">
+</a>
+
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <ul class="nav-links" data-nav>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="Spotless-about-us-page.HTML">About</a></li>
+        <li><a href="#booking">Book pickup</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="pill">Premium laundry service</p>
+          <h1>Fresh laundry, zero stress.</h1>
+          <p class="lead">
+            We pick up, wash, fold, and deliver your clothes back spotless — same day options available.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn" href="#booking">Schedule a pickup</a>
+            <a class="btn btn-ghost" href="#pricing">See pricing</a>
+          </div>
+
+          <div class="hero-stats" aria-label="Service highlights">
+            <div class="stat">
+              <strong>24h</strong><span>Turnaround</span>
+            </div>
+            <div class="stat">
+              <strong>4.9★</strong><span>Customer rating</span>
+            </div>
+            <div class="stat">
+              <strong>Free</strong><span>Pickup & delivery</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card" id="booking" aria-label="Quick booking card">
+          <h2 class="card-title">Quick booking</h2>
+          <p class="muted">Reserve in under 60 seconds.</p>
+
+          <form class="form form-grid">
+            <label>
+              Full name
+              <input type="text" name="name" placeholder="e.g., Sope Agbebi" required />
+            </label>
+
+            <label>
+              Phone number
+              <input type="tel" name="phone" placeholder="e.g., +234..." required />
+            </label>
+
+            <label>
+              Pickup date
+              <input type="date" name="date" required />
+            </label>
+
+            <label>
+              Service type
+              <select name="service" id="serviceSelect" required>
+                <option value="">Select…</option>
+                <option>Wash & Fold</option>
+                <option>Wash, Iron & Fold</option>
+                <option>Dry Cleaning</option>
+              </select>
+            </label>
+
+            <button class="btn btn-block" type="submit">Book pickup</button>
+            <p class="tiny muted">By booking, you agree to our service terms.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section-head">
+          <h2>How it works</h2>
+          <p class="muted">Simple, reliable, and designed for busy days.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="icon">🧺</div>
+            <h3>Wash</h3>
+            <p>We sort by color & fabric, then wash with quality detergent for a fresh finish.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🧻</div>
+            <h3>Fold</h3>
+            <p>Every item is neatly folded (or ironed if selected) and packed with care.</p>
+          </article>
+
+          <article class="card">
+            <div class="icon">🚚</div>
+            <h3>Deliver</h3>
+            <p>We deliver to your doorstep — on time, with easy pickup/delivery updates.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section section-alt" id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <h2>Pricing</h2>
+          <p class="muted">Transparent plans. No hidden fees.</p>
+        </div>
+
+        <div class="pricing-grid" role="list">
+          <article class="price card" role="listitem" data-plan="Basic" tabindex="0">
+            <h3>Basic</h3>
+            <p class="muted">Best for light weekly laundry</p>
+            <p class="price-tag"><span class="currency">₦</span>7,500</p>
+            <ul class="list">
+              <li>Up to 5kg</li>
+              <li>Wash & fold</li>
+              <li>48h delivery</li>
+            </ul>
+            <a class="btn btn-ghost btn-block plan-btn" href="#booking" data-plan="Basic" data-service="Wash & Fold">
+              Choose Basic
+            </a>
+          </article>
+
+          <article class="price card featured" role="listitem" data-plan="Standard" tabindex="0">
+            <div class="badge">Most popular</div>
+            <h3>Standard</h3>
+            <p class="muted">Perfect for couples & professionals</p>
+            <p class="price-tag"><span class="currency">₦</span>12,500</p>
+            <ul class="list">
+              <li>Up to 10kg</li>
+              <li>Wash, fold & pack</li>
+              <li>24h delivery</li>
+            </ul>
+            <a class="btn btn-block plan-btn" href="#booking" data-plan="Standard" data-service="Wash & Fold">
+              Choose Standard
+            </a>
+          </article>
+
+          <article class="price card" role="listitem" data-plan="Premium" tabindex="0">
+            <h3>Premium</h3>
+            <p class="muted">For large loads & special care</p>
+            <p class="price-tag"><span class="currency">₦</span>18,500</p>
+            <ul class="list">
+              <li>Up to 15kg</li>
+              <li>Ironing included</li>
+              <li>Same-day options</li>
+            </ul>
+            <a class="btn btn-ghost btn-block plan-btn" href="#booking" data-plan="Premium" data-service="Wash, Iron & Fold">
+              Choose Premium
+            </a>
+          </article>
+        </div>
+
+        <p class="note muted">
+          *Prices are sample values for your portfolio. You can change them anytime.
+        </p>
+      </div>
+    </section>
+
+    <!-- REVIEWS (UPGRADED + DUMMY IMAGES) -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-head">
+          <h2>Loved by customers</h2>
+          <p class="muted">Consistent quality. Smooth experience.</p>
+        </div>
+
+        <div class="reviews-grid" data-reviews>
+          <article class="review-card">
+            <div class="review-top">
+              <img class="avatar" src="https://placehold.co/96x96/png?text=KA" alt="Kemi A." />
+              <div>
+                <h3 class="review-name">Kemi A.</h3>
+                <p class="review-meta muted">Victoria Island • Wash & Fold</p>
+              </div>
+              <div class="stars" aria-label="5 star rating">★★★★★</div>
+            </div>
+
+            <p class="review-text">
+              “Best laundry service I’ve used. Pickup was fast and everything came back perfect.”
+            </p>
+          </article>
+
+          <article class="review-card">
+            <div class="review-top">
+              <img class="avatar" src="https://placehold.co/96x96/png?text=DO" alt="Daniel O." />
+              <div>
+                <h3 class="review-name">Daniel O.</h3>
+                <p class="review-meta muted">Yaba • Standard Plan</p>
+              </div>
+              <div class="stars" aria-label="5 star rating">★★★★★</div>
+            </div>
+
+            <p class="review-text">
+              “The folding is super neat. The whole process feels premium and stress-free.”
+            </p>
+          </article>
+
+          <article class="review-card">
+            <div class="review-top">
+              <img class="avatar" src="https://placehold.co/96x96/png?text=TS" alt="Tolu S." />
+              <div>
+                <h3 class="review-name">Tolu S.</h3>
+                <p class="review-meta muted">Lekki • Same-day</p>
+              </div>
+              <div class="stars" aria-label="5 star rating">★★★★★</div>
+            </div>
+
+            <p class="review-text">
+              “Same-day service saved me before an event. 10/10 and the packaging is clean.”
+            </p>
+          </article>
+        </div>
+
+        <div class="review-strip">
+          <div class="strip-item">
+            <strong>4.9/5</strong><span class="muted">Average rating</span>
+          </div>
+          <div class="strip-item">
+            <strong>2,300+</strong><span class="muted">Happy customers</span>
+          </div>
+          <div class="strip-item">
+            <strong>24h</strong><span class="muted">Standard turnaround</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <h2>Frequently asked questions</h2>
+          <p class="muted">Quick answers to common questions.</p>
+        </div>
+
+        <div class="faq">
+          <details class="faq-item">
+            <summary>Do you offer same-day service?</summary>
+            <p class="muted">Yes — same-day is available in select areas depending on pickup time and load size.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>How do you price laundry?</summary>
+            <p class="muted">Our portfolio pricing is by weight (kg). In real life you can also price by item or bundles.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>What if an item needs special care?</summary>
+            <p class="muted">You can select “Dry Cleaning” or add a note. We separate delicate fabrics and follow care labels.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do you wash whites and colors together?</summary>
+            <p class="muted">No. We sort by color and fabric type before washing to avoid color bleeding.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container cta-box">
+        <div>
+          <h2>Ready for spotless laundry?</h2>
+          <p class="muted">Book a pickup today and enjoy fresh clothes without the hassle.</p>
+        </div>
+        <a class="btn" href="#booking">Book now</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="logo" href="#top" aria-label="Spotless Laundry Home">
+        <img src="logo.png" class="logo-mark" alt="Spotless logo">
+      </a>
+      <p class="muted">Premium wash • fold • deliver.</p>
+    </div>
+
+    <div>
+      <h4>Company</h4>
+      <a href="Spotless-about-us-page.HTML">About us</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#how">How it works</a>
+    </div>
+
+    <div>
+      <h4>Support</h4>
+      <a href="#booking">Book pickup</a>
+      <a href="#top">Back to top</a>
+    </div>
+  </div>
+
+  <p class="tiny muted center">© <span id="year"></span> Spotless Laundry. Portfolio project.</p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
